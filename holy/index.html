@@ -1,0 +1,236 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Noter</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" type="text/css" href="public/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+   
+</head>
+<body class="grey lighten-3">
+<nav class="nav-extended">
+    <div class="nav-wrapper">
+        <a class="brand-logo center">Noter</a>
+    </div>
+    <div class="nav-content">
+        <a class="btn-floating btn-large halfway-fab waves-effect waves-light teal add-btn">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+</nav>
+<br>
+<div class="container" id="note-container">
+    <div class="row">
+        <div class="col s12">
+        	<div class="card hoverable z-depth-2 hide" id="form-card">
+        		<div class="card-content">
+        			<span class="card-title">Add New Note</span>
+		        	<form>
+		        		<input placeholder="Title" id="title" name="title" type="text" class="validate">
+						<textarea id="note" placeholder="Note" name="note" class="materialize-textarea" required></textarea>
+						<button class="btn waves-effect waves-light" name="submit" id="submit">Submit
+							<i class="material-icons right">send</i>
+						</button>
+					</form>
+				</div>
+			</div>
+      <div class="flex-container">
+        
+  <ul class="collapsible">
+    <li>
+      <div class="collapsible-header">Walk the Dog</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut neque finibus magna finibus pellentesque at in nibh. Nam faucibus, libero sit amet mattis bibendum, nulla eros iaculis nisi, malesuada pellentesque nunc augue eget dolor. Duis scelerisque nulla nec massa convallis, vel lacinia elit blandit.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Flight Tomorrow</div>
+      <div class="collapsible-body"><span>Phasellus pretium molestie erat, ut tempor tellus efficitur at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque eleifend eleifend nibh ut ultricies.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Go the Gym</div>
+      <div class="collapsible-body"><span>
+        <ul class="browser-default">
+          <li>Nulla at leo vitae urna lacinia fermentum vitae et metus.</li>
+          <li>Maecenas porttitor nisl quis dictum condimentum.</li>
+	      </ul></span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Buy groceries</div>
+      <div class="collapsible-body"><span>Vestibulum eget orci vel quam venenatis efficitur a quis justo.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Message tutor</div>
+      <div class="collapsible-body"><span>In faucibus nec metus quis pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris eleifend lacus lacinia felis vehicula, rutrum tempus ligula vulputate.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Note 6</div>
+      <div class="collapsible-body"><span><ul class="browser-default">
+	                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+	                        <li>Proin elementum lectus id luctus congue.</li>
+	                        <li>Curabitur id enim auctor, mattis dui nec, laoreet tortor.</li>
+	                        <li>Quisque sed odio sit amet urna consequat dictum ac non augue.</li>
+	                    </ul></span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Note 7</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut neque finibus magna finibus pellentesque at in nibh. Nam faucibus, libero sit amet mattis bibendum, nulla eros iaculis nisi, malesuada pellentesque nunc augue eget dolor. Duis scelerisque nulla nec massa convallis, vel lacinia elit blandit.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Note 8</div>
+      <div class="collapsible-body"><span>Phasellus pretium molestie erat, ut tempor tellus efficitur at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque eleifend eleifend nibh ut ultricies.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Note 9</div>
+      <div class="collapsible-body"><span><ul class="browser-default">
+	                        <li>Nulla at leo vitae urna lacinia fermentum vitae et metus.</li>
+	                        <li>Maecenas porttitor nisl quis dictum condimentum.</li>
+	                    </ul></span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Note 10</div>
+      <div class="collapsible-body"><span>Vestibulum eget orci vel quam venenatis efficitur a quis justo.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Note 11</div>
+      <div class="collapsible-body"><span>In faucibus nec metus quis pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris eleifend lacus lacinia felis vehicula, rutrum tempus ligula vulputate.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header">Note 12</div>
+      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    </li>
+  </ul>
+        
+      </div>
+			<!-- 
+	            <div class="card hoverable z-depth-2 note">
+	                <ul class="collapsible">
+	                	<li>
+	                    <span class="card-title">Note 1 
+	                    	<a class="btn-flat right close"><i class="material-icons">close</i></a>
+	                    </span>
+	                    <div class="divider"></div>
+	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut neque finibus magna finibus pellentesque at in nibh. Nam faucibus, libero sit amet mattis bibendum, nulla eros iaculis nisi, malesuada pellentesque nunc augue eget dolor. Duis scelerisque nulla nec massa convallis, vel lacinia elit blandit.</p>
+		                </li>
+		                <li>
+		                    <span class="card-title">Note 2
+		                    	<a class="btn-flat right close"><i class="material-icons">close</i></a>
+		                    </span>
+		                    <div class="divider"></div>
+		                    <p>Phasellus pretium molestie erat, ut tempor tellus efficitur at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque eleifend eleifend nibh ut ultricies.</p>
+		                </li>
+	                	<li>
+	                    <span class="card-title">Note 3
+	                    	<a class="btn-flat right close"><i class="material-icons">close</i></a>
+	                    </span>
+	                    <div class="divider"></div>
+	                    <ul class="browser-default">
+	                        <li>Nulla at leo vitae urna lacinia fermentum vitae et metus.</li>
+	                        <li>Maecenas porttitor nisl quis dictum condimentum.</li>
+	                    </ul>
+	                	</li>
+	                <li>
+	                    <span class="card-title">Note 4
+	                    	<a class="btn-flat right close"><i class="material-icons">close</i></a>
+	                    </span>
+	                    <div class="divider"></div>
+	                    <p>Vestibulum eget orci vel quam venenatis efficitur a quis justo.</p>
+	                </div>
+	            	</li>
+	            <div class="card hoverable z-depth-2 note">
+	                <div class="card-content">
+	                    <span class="card-title">Note 5
+	                    	<a class="btn-flat right close"><i class="material-icons">close</i></a>
+	                    </span>
+	                    <div class="divider"></div>
+	                    <p>In faucibus nec metus quis pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris eleifend lacus lacinia felis vehicula, rutrum tempus ligula vulputate.</p>
+	                </div>
+	            </div>
+	            <div class="card hoverable z-depth-2 note">
+	                <div class="card-content">
+	                    <span class="card-title">Note 6
+	                    	<a class="btn-flat right close"><i class="material-icons">close</i></a>
+	                    </span>
+	                    <div class="divider"></div>
+	                    <ul class="browser-default">
+	                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+	                        <li>Proin elementum lectus id luctus congue.</li>
+	                        <li>Curabitur id enim auctor, mattis dui nec, laoreet tortor.</li>
+	                        <li>Quisque sed odio sit amet urna consequat dictum ac non augue.</li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <div class="card hoverable z-depth-2 note">
+	                <div class="card-content">
+	                    <span class="card-title">Note 7
+	                    	<a class="btn-flat right close"><i class="material-icons">close</i></a>
+	                    </span>
+	                    <div class="divider"></div>
+	                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut neque finibus magna finibus pellentesque at in nibh. Nam faucibus, libero sit amet mattis bibendum, nulla eros iaculis nisi, malesuada pellentesque nunc augue eget dolor. Duis scelerisque nulla nec massa convallis, vel lacinia elit blandit.</p>
+	                </div>
+	            </div>
+	            <div class="card hoverable z-depth-2 note">
+	                <div class="card-content">
+	                    <span class="card-title">Note 8
+	                    	<a class="btn-flat right close"><i class="material-icons">close</i></a>
+	                    </span>
+	                    <div class="divider"></div>
+	                    <p>Phasellus pretium molestie erat, ut tempor tellus efficitur at. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque eleifend eleifend nibh ut ultricies.</p>
+	                </div>
+	            </div>
+	            <div class="card hoverable z-depth-2 note">
+	                <div class="card-content">
+	                    <span class="card-title">Note 9
+	                    	<a class="btn-flat right close"><i class="material-icons">close</i></a>
+	                    </span>
+	                    <div class="divider"></div>
+	                    <ul class="browser-default">
+	                        <li>Nulla at leo vitae urna lacinia fermentum vitae et metus.</li>
+	                        <li>Maecenas porttitor nisl quis dictum condimentum.</li>
+	                    </ul>
+	                </div>
+	            </div>
+	            <div class="card hoverable z-depth-2 note">
+	                <div class="card-content">
+	                    <span class="card-title">Note 10
+	                    	<a class="btn-flat right close"><i class="material-icons">close</i></a>
+	                    </span>
+	                    <div class="divider"></div>
+	                    <p>Vestibulum eget orci vel quam venenatis efficitur a quis justo.</p>
+	                </div>
+	            </div>
+	            <div class="card hoverable z-depth-2 note">
+	                <div class="card-content">
+	                    <span class="card-title">Note 11
+	                    	<a class="btn-flat right close"><i class="material-icons">close</i></a>
+	                    </span>
+	                    <div class="divider"></div>
+	                    <p>In faucibus nec metus quis pharetra. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris eleifend lacus lacinia felis vehicula, rutrum tempus ligula vulputate.</p>
+	                </div>
+	            </div>
+	            <div class="card hoverable z-depth-2 note">
+	                <div class="card-content">
+	                    <span class="card-title">Note 12
+	                    	<a class="btn-flat right close"><i class="material-icons">close</i></a>
+	                    </span>
+	                    <div class="divider"></div>
+	                    <ul class="browser-default">
+	                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+	                        <li>Proin elementum lectus id luctus congue.</li>
+	                        <li>Curabitur id enim auctor, mattis dui nec, laoreet tortor.</li>
+	                        <li>Quisque sed odio sit amet urna consequat dictum ac non augue.</li>
+	                    </ul>
+	                </div>
+            	</div>
+            </div> -->
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="public/javascripts/note-app.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
+

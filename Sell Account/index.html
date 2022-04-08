@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="css/theStyle.css">
+  <script src="../js/jquery-3.4.1.js"></script>
+  <script src="../js/store.js" async></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=mbc" />
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=saudi" />
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=zahra-bold" />
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=rawi" />
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=mbc" />
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=hanimation" />
+    <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=cairo" />
+    <link href="https://fonts.googleapis.com/css?family=Almarai&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imgs/logo.png">
+
+    <title>بيع الحساب</title>
+</head>
+<body>
+
+<header>
+    <section class="navigation" style="font-family: 'Almarai', sans-serif; font-size: 14px;">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="../" ><img src="../imgs/theLogo.png" alt=""></a>
+        </div>
+        <nav>
+
+          <ul class="nav-list">
+            <li>
+              <a href="../index.html#!" id="support">الدعم</a>
+            </li>
+            <li>
+              <a href="#!" style="color: #F0C022;">الحسابات</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#" style="color: #F0C022;">بيع حساب</a>
+                </li>
+                <li>
+                  <a href="../AccountsByCustomers/index.php">شراء حساب</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="../index.html#!" id="isBoxPackss">الباقات</a>
+            </li>
+            <li>
+              <a href="../index.html#!" id="packs">الحزم</a>
+            </li>
+            <li>
+              <a href="../index.html#!"  id="home">الرئيسية</a>
+            </li>
+            <li>
+              <a href="#!" id="cart" class="navbar-right" style="color: #F0C022;">
+                <span class="badge2" style="position: relative; left: 10px; z-index: 1; bottom: 6px;"></span>
+                <i class=""><img src="../imgs/shoppingcartimg.png" style="position: relative; height: 40px; top: 10px;" ></i>
+              </a>
+
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <div class="shopping-cart">
+      <div class="shopping-cart-header">
+        <i class="fa fa-shopping-cart cart-icon"></i><span class="badge2 "></span>
+        <div class="shopping-cart-total">
+          <span class="lighter-text">:الإجمالي</span>
+          <span class="main-color-text total-price">$0</span>
+        </div>
+      </div>
+      <ul class="shopping-cart-items"></ul>
+      <a href="../checkout/index.html" class="CheckOutButton" style="font-weight: 900; font-family: 'mbc';font-size: 24px;">اِتمام الدّفع</a>
+    </div>
+  </header>
+  <div class="containerrr">
+    <div class="infoBefore">
+        <img src="../imgs/wait.png" class="intro-box-img">
+            
+            <p class="intro-box-txt-title">!الرجاء قبل ملء النموذج </p>
+            <p class="intro-box-txt-subtitle">أولا. يجب عليك تعطيل <a style="color:#E2CB72; text-decoration: underline;"href="https://epicgames.com/2FA" target="_blank">"تو إف اي"</a> للسماح للمشرف بالتحقق من حساب فورت نايت
+               الخاص بك وإذا كانت جميع المعلومات المقدمة صحيحة
+              . تم التحقق من كل حساب منشور على موقعنا من قبل
+               المسؤولين بعد التحقق مما إذا كان الحساب يعمل حقًا
+               ، وجميع المعلومات صحيحة! نحن نتحقق أيضًا مما إذا كان الحساب لا يواجه أي مشكلة في الربط وإذا كان الحساب يستحق الثمن. 
+            </p> 
+            <p class="intro-box-txt-subtitle">
+                (اذا لم يستطع أي مسؤول الدخول الى حسابك للتحقق من صحّة المعلومات. حسابك لن يتم رفعه على موقعنا)
+            </p>
+            
+
+    </div>
+
+    <div class="allForm">
+      <div class="sell-account">
+        <form id="theForm" action="connect.php" method="post" enctype="multipart/form-data">
+          <div id="errorA" style="display:none;"></div>
+          <div class="platform-checkbox">
+            <p style="margin-bottom: 15px;">منصات الحساب</p>
+            <div class="stylePF">
+            <div class="thePlatforms">
+                <label for="ps4" class="checkbox-layout">
+                    <img src="../imgs/playicons/ps4.png" class="platform-img">
+                    <input type="checkbox" id="ps4"name="platform[]" value="ps4"><span class="checkNames">PS4</span>
+                    <span class="checkmark"></span>
+                </label>
+                <label for="pc" class="checkbox-layout">
+                    <img src="../imgs/playicons/pc.png" class="platform-img">
+                    <input type="checkbox" id="pc"name="platform[]" value="pc" ><span class="checkNames">PC</span>
+                    <span class="checkmark"></span>
+                </label>
+                <label for="xbox" class="checkbox-layout">
+                    <img src="../imgs/playicons/xbox.png" class="platform-img">
+                    <input type="checkbox" id="xbox" name="platform[]" value="xbox" ><span class="checkNames">XBOX</span>
+                    <span class="checkmark"></span>
+                </label>
+                <label for="switch" class="checkbox-layout">
+                    <img src="../imgs/playicons/switch.png" class="platform-img">
+                    <input type="checkbox" id="switch" name="platform[]" value="switch" ><span class="checkNames">Switch</span>
+                    <span class="checkmark"></span>
+                </label>
+                <label for="mobile" class="checkbox-layout">
+                    <img src="../imgs/playicons/mobile.png" class="platform-img">
+                    <input type="checkbox" id="mobile" name="platform[]" value="mobile"><span class="checkNames">Mobile</span>
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+          </div>
+         </div>
+            <div class="colmon">
+                <p>اجمالي فوزات السكواد</p>
+                <input type="text" onkeypress="return isNumberKey(event)"
+                 id="aSquadW" name="squadWin" value="" placeholder="مثال. 98" required>
+             </div>
+             <div class="colmon">
+                <p>اجمالي فوزات السولو</p>
+                <input type="text" onkeypress="return isNumberKey(event)"
+                  name="soloWin" placeholder="مثال. 98"  id="aSoloW" required> 
+             </div>
+             <div class="colmon">
+                <p>اجمالي فوزات الدو</p>
+                <input type="text" name="duoWin"onkeypress="return isNumberKey(event)"
+                  placeholder="مثال. 98"  id="aduoW" required>
+             </div>
+             
+             <div class="colmon">
+                <p>اجمالي السكنات</p>
+                <input type="text" name="skin"onkeypress="return isNumberKey(event)"
+                 placeholder="مثال. 98"  id="aSkin" required>
+             </div>
+             <div class="colmon">
+                <p>اجمالي البيكاكسات</p>
+                <input type="text" name="pickaxe" onkeypress="return isNumberKey(event)"
+                 placeholder="مثال. 98"  id="aAxe" required>
+             </div>
+             <div class="colmon">
+                <p>اجمالي المظلات</p>
+                <input type="text" name="glider" onkeypress="return isNumberKey(event)"
+                 placeholder="مثال. 98"  id="aGlider" required>
+             </div>
+             
+             <div class="colmon">
+                <p>اجمالي الإيموتس (الرقصات فقط!)</p>
+                <input type="text" name="dance" onkeypress="return isNumberKey(event)"
+                 placeholder="مثال. 98"  id="aDance" required>
+             </div>
+             <div class="colmon">
+                <p>اجمالي حقائب الظهر</p>
+                <input type="text" name="blings" onkeypress="return isNumberKey(event)"
+                 placeholder="مثال. 98"  id="aBling" required>
+             </div>
+             <div class="colmon">
+              <p >صورة لسكنات الحساب</p>
+              <input class="pImgs" type="file" name="sImage" class="accountImgs" required > <!--skin Images-->
+            </div>
+            
+            <div class="colmon">
+              <p>صورة لبيكاكسات الحساب</p>
+              <input class="pImgs" type="file" name="pImage" class="accountImgs" required > <!--pickaxe Images-->
+            </div>
+            <div class="colmon">
+              <p >صورة لحقائب الظهر في الحساب</p>
+              <input class="pImgs" type="file" name="bImage" class="accountImgs" required > <!--backBlings Images-->
+            </div>
+            <div class="colmon">
+              <p >صورة لمظلات الحساب</p>
+              <input class="pImgs" type="file" name="gImage" class="accountImgs" required > <!--glider Images-->
+            </div>
+            
+            <div class="colmon">
+              <p >صورة لرقصات الحساب</p>
+              <input class="pImgs" type="file" name="eImage" class="accountImgs" required > <!--glider Images-->
+            </div>
+             <div class="colmon">
+                <p>عمر البائع</p>
+                <input type="text" name="sAge" onkeypress="return isNumberKey(event)"
+                 placeholder="مثال. 18"  id="age" required>
+             </div>
+             <div class="colmon">
+                <p>ايميل التواصل</p>
+                <input type="text" name="email" value="" placeholder="مثال. name12@gmail.com"  id="email" required>
+             </div>
+             
+             <div class="colmon">
+                <p>الاسم الكامل</p>
+                <input type="text" name="fullName" value="" placeholder="مثال. خالد ناصر"  id="fullName" required>
+             </div>
+             
+
+             <div class="colmon">
+                <p>ايدي ايبك قيمز</p>
+                <input type="text" name="userName" value="" placeholder="مثال. ixm7md"  id="username" required>
+             </div>
+             <div class="colmon-checkbox">
+                <p>هل لغيت امان التحقق في الحساب؟</p>
+                <div style="color: #fff; display: flex; justify-content: center;">
+                  <p style="font-size: 10px; font-weight: 10; margin-right: -15px; line-height: 4;">لن يتم رفع الحساب اذا اخترت لا</p>
+                    <label for="ySecurity" class="checkbox-layout" style="font-size: 14px;">
+                        <input type="radio" id="ySecurity" name="faS[]" value="yes" required>نعم
+                        <span class="checkmark" style="margin-left: 6px;"></span>
+                    </label>
+                    <label for="nSecurity" class="checkbox-layout" style="font-size: 14px; margin-left: 15px;">
+                        <input type="radio" id="nSecurity" name="faS[]" value="no">لا
+                        <span class="checkmark" style="margin-left: 7px;"></span>
+                    </label>
+                    
+                </div>
+             </div>
+             
+             <div class="colmon">
+                <p>ايميل الحساب</p>
+                <input type="text" name="aEmail" value="" placeholder="مثال. name12@gmail.com"  id="aEmail" required>
+             </div>
+             <div class="colmon">
+                <p>كلمة سر الحساب</p>
+                <input name="aPwd" type="password"  id="pwd" required>
+             </div>
+             <div class="colmon">
+                <p>السعر المتوقّع '$'</p>
+                <input type="text" name="price" onkeypress="return isNumberKey(event)"
+                 placeholder="ex. $152.99"  id="price" required>
+             </div>
+             <button name="submit" onclick="btnClicked()" class="submitBtn" style="color: #E2CB72;"><span>تقديم الطلب</span></button>
+        </form>
+      </div>
+    </div>
+    </div>
+
+  <!--start of scripts-->
+  <script> 
+    (function () {
+      $(".shopping-cart").hide();
+      $("#cart").on("click", function () {
+        $(".shopping-cart").fadeToggle("fast");
+
+      });
+      $('#container').click(function () {
+        $('.navigation').hide();
+      });
+
+    })();
+
+    (function ($) { // Begin jQuery
+      $(function () { // DOM ready
+        // If a link has a dropdown, add sub menu toggle.
+        $('nav ul li a:not(:only-child)').click(function (e) {
+          $(this).siblings('.nav-dropdown').toggle();
+          // Close one dropdown when selecting another
+          $('.nav-dropdown').not($(this).siblings()).hide();
+          e.stopPropagation();
+        });
+        // Clicking away from dropdown will remove the dropdown class
+        $('html').click(function () {
+          $('.nav-dropdown').hide();
+        });
+        // Toggle open and close nav styles on click
+        $('#nav-toggle').click(function () {
+          $('nav ul').slideToggle();
+        });
+        // Hamburger to X toggle
+        $('#nav-toggle').on('click', function () {
+          this.classList.toggle('active');
+        });
+      }); // end DOM ready
+    })(jQuery); // end jQuery
+    </script>
+    <script>
+      $(".alert").hide();
+      
+    </script>
+      <!-- enterValue is just numbers..-->
+<script language=Javascript>
+  function isNumberKey(evt){
+     var charCode = (evt.which) ? evt.which : event.keyCode
+     if (charCode > 31 && (charCode < 48 || charCode > 57))
+        return false;
+        return true;
+  }
+  $('html').click(function () {
+          $('.nav-dropdown').hide();
+        });
+        // Toggle open and close nav styles on click
+        $('#nav-toggle').click(function () {
+          $('nav ul').slideToggle();
+        });
+        // Hamburger to X toggle
+        $('#nav-toggle').on('click', function () {
+          this.classList.toggle('active');
+        });
+        $('.containerrr').click(function () {
+          $('.shopping-cart').hide();
+        });
+</script>
+      <!--end of scripts-->
+      <script>
+          const regex = /^((?!\.)[\w-_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])$/;
+          const pwdRegex = /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/;
+          var squadWins = document.getElementById('aSquadW')
+          var soloWins = document.getElementById('aSoloW')
+          var duoWins = document.getElementById('aduoW')
+          var skins = document.getElementById('aSkin')
+          var pickaxes = document.getElementById('aAxe')
+          var gliders = document.getElementById('aGlider')
+          var dances = document.getElementById('aDance')
+          var backBlings = document.getElementById('aBling')
+          var age = document.getElementById('age')
+          var sellerEmail = document.getElementById('email')
+          var fullName = document.getElementById('fullName')
+          var username = document.getElementById('username')
+          var accountEmail = document.getElementById('aEmail')
+          var accountPWD = document.getElementById('pwd')
+          var price = document.getElementById('price')
+          var form = document.getElementById('theForm')
+          var submitBtn = document.getElementsByClassName('submitBtn')
+
+          let errorCount = []
+          let errorsAfter = [];
+
+          $(squadWins).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+          $(squadWins).blur(function() {
+              $(this).off("click");
+              if(squadWins.value == '' || squadWins.value >= 1000) {
+                squadWins.style.borderBottom ='red solid 1px'
+                errorCount.push('squadwinsError')
+                errorsAfter.push('squadwinsError')
+              } 
+              else {
+                squadWins.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'squadwinsError' });
+                }
+              }
+          });
+
+          $(soloWins).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+          $(soloWins).blur(function() {
+              $(this).off("click");
+              if(soloWins.value == '' || soloWins.value >= 1000) {
+                soloWins.style.borderBottom ='red solid 1px'
+                errorCount.push('solowinsError')
+                errorsAfter.push('solowinsError')
+              } 
+              else {
+                soloWins.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'solowinsError' });
+                }
+              }
+          });
+
+          $(duoWins).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(duoWins).blur(function() {
+              $(this).off("click");
+              if(duoWins.value == '' || duoWins.value >= 1000) {
+                duoWins.style.borderBottom ='red solid 1px'
+                errorCount.push('duoWinsError')
+                errorsAfter.push('duoWinsError')
+              } 
+              else {
+                duoWins.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'duoWinsError' });
+                }
+              }
+          });
+
+          $(skins).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(skins).blur(function() {
+              $(this).off("click");
+              if(skins.value == '' || skins.value >= 1000) {
+                skins.style.borderBottom ='red solid 1px'
+                errorCount.push('skinsError')
+                errorsAfter.push('skinsError')
+              } 
+              else {
+                skins.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'skinsError' });
+                }
+              }
+          });
+
+          $(pickaxes).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(pickaxes).blur(function() {
+              $(this).off("click");
+              if(pickaxes.value == '' || pickaxes.value >= 1000) {
+                pickaxes.style.borderBottom ='red solid 1px'
+                errorCount.push('pickaxesError')
+                errorsAfter.push('pickaxesError')
+              } 
+              else {
+                pickaxes.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'pickaxesError' });
+                }
+              }
+          });
+
+          $(gliders).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(gliders).blur(function() {
+              $(this).off("click");
+              if(gliders.value == '' || gliders.value >= 1000) {
+                gliders.style.borderBottom ='red solid 1px'
+                errorCount.push('glidersError')
+                errorsAfter.push('glidersError')
+              } 
+              else {
+                gliders.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'glidersError' });
+                }
+              }
+          });
+
+          $(dances).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(dances).blur(function() {
+              $(this).off("click");
+              if(dances.value == '' || dances.value >= 1000) {
+                dances.style.borderBottom ='red solid 1px'
+                errorCount.push('dancesError')
+                errorsAfter.push('dancesError')
+              } 
+              else {
+                dances.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'dancesError' });
+                }
+              }
+          });
+
+          $(backBlings).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(backBlings).blur(function() {
+              $(this).off("click");
+              if(backBlings.value == '' || backBlings.value >= 1000) {
+                backBlings.style.borderBottom ='red solid 1px'
+                errorCount.push('backBlingsError')
+                errorsAfter.push('backBlingsError')
+              } 
+              else {
+                backBlings.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'backBlingsError' });
+                }
+              }
+          });
+
+          $(age).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(age).blur(function() {
+              $(this).off("click");
+              if(age.value == '' || age.value >= 100 || age.value <=12) {
+                age.style.borderBottom ='red solid 1px'
+                errorCount.push('ageError')
+                errorsAfter.push('ageError')
+              } 
+              else {
+                age.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'ageError' });
+                }
+              }
+          });
+
+          $(sellerEmail).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(sellerEmail).blur(function() {
+              $(this).off("click");
+              if(sellerEmail.value == '' || sellerEmail.value.length > 120 || !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(sellerEmail.value)) {
+                sellerEmail.style.borderBottom ='red solid 1px'
+                errorCount.push('sellerEmailError')
+                errorsAfter.push('sellerEmailError')
+              } 
+              else {
+                sellerEmail.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'sellerEmailError' });
+                }
+              }
+          });
+
+          $(fullName).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(fullName).blur(function() {
+              $(this).off("click");
+              if(fullName.value == '' || fullName.value >= 1000) {
+                fullName.style.borderBottom ='red solid 1px'
+                errorCount.push('fullNameError')
+                errorsAfter.push('fullNameError')
+              } 
+              else {
+                fullName.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'fullNameError' });
+                }
+              }
+          });
+
+          $(username).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(username).blur(function() {
+              $(this).off("click");
+              if(username.value == '' || username.value >= 1000) {
+                username.style.borderBottom ='red solid 1px'
+                errorCount.push('usernameError')
+                errorsAfter.push('usernameError')
+              } 
+              else {
+                username.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'usernameError' });
+                }
+              }
+          });
+
+          $(accountEmail).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(accountEmail).blur(function() {
+              $(this).off("click");
+              if(accountEmail.value == '' || accountEmail.value.length >= 120 || !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(accountEmail.value)) {
+                accountEmail.style.borderBottom ='red solid 1px'
+                errorCount.push('accountEmailError')
+                errorsAfter.push('accountEmailError')
+              } 
+              else {
+                accountEmail.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'accountEmailError' });
+                }
+              }
+          });
+
+          $(accountPWD).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(accountPWD).blur(function() {
+              $(this).off("click");
+              if(accountPWD.value == '' || accountPWD.value.length < 8 || accountPWD.value.length > 100) {
+                accountPWD.style.borderBottom ='red solid 1px'
+                errorCount.push('accountPWDError')
+                errorsAfter.push('accountPWDError')
+              } 
+              else {
+                accountPWD.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'accountPWDError' });
+                }
+              }
+          });
+
+          $(price).on("click", function() {
+            if ($(this).is(':focus')) {}
+            else {$(this).focus();}
+          });
+
+          $(price).blur(function() {
+              $(this).off("click");
+              if(price.value == '' || price.value >= 3000) {
+                price.style.borderBottom ='red solid 1px'
+                errorCount.push('priceError')
+                errorsAfter.push('priceError')
+              } 
+              else {
+                price.style.border ='none'
+                for(var i=0;i<errorCount.length;i++) {
+                  errorsAfter =errorCount.filter(function(x) { return x != 'priceError' });
+                }
+              }
+          });
+
+
+
+          
+          if(errorsAfter.length>0){
+            submitBtn.disabled = true;
+          } else {
+            submitBtn.disabled = false;
+          }
+        function btnClicked() {
+          if(squadWins.value == '') {
+            
+            squadWins.style.borderBottom ='red solid 1px'
+          }
+          if(soloWins.value == '') {
+            
+            soloWins.style.borderBottom ='red solid 1px'
+          }
+          if(duoWins.value == '') {
+            
+            duoWins.style.borderBottom ='red solid 1px'
+          }
+          if(skins.value == '') {
+            
+            skins.style.borderBottom ='red solid 1px'
+          }
+          if(pickaxes.value == '') {
+            
+            pickaxes.style.borderBottom ='red solid 1px'
+          }
+          if(gliders.value == '') {
+            
+            gliders.style.borderBottom ='red solid 1px'
+          }
+          if(dances.value == '') {
+            
+            dances.style.borderBottom ='red solid 1px'
+          }
+          if(backBlings.value == '') {
+            
+            backBlings.style.borderBottom ='red solid 1px'
+          }
+          if(age.value == '') {
+            
+            age.style.borderBottom ='red solid 1px'
+          }
+          if(sellerEmail.value == '') {
+            
+            sellerEmail.style.borderBottom ='red solid 1px'
+          }
+          if(fullName.value == '') {
+            
+            fullName.style.borderBottom ='red solid 1px'
+          }
+          if(username.value == '') {
+            
+            username.style.borderBottom ='red solid 1px'
+          }
+          if(accountEmail.value == '') {
+            
+            accountEmail.style.borderBottom ='red solid 1px'
+          }
+          if(accountPWD.value == '') {
+            
+            accountPWD.style.borderBottom ='red solid 1px'
+          }
+          if(price.value == '') {
+            
+            price.style.borderBottom ='red solid 1px'
+          }
+
+        }
+      </script>
+          <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+      (function(){
+      var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+      s1.async=true;
+      s1.src='https://embed.tawk.to/5c4a0e57ab5284048d0e7212/default';
+      s1.charset='UTF-8';
+      s1.setAttribute('crossorigin','*');
+      s0.parentNode.insertBefore(s1,s0);
+      })();
+      </script>
+      <!--End of Tawk.to Script-->
+</body>
+</html>

@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <title>Fortnite Box</title>
+  <meta name="title" content="Fortnite Box">
+<meta name="description" content="فورت نايت بوكس هو أكبر, أسرع, وأأمن موقع لبيع حسابات فورت نايت في الشرق الأوسط. كما يمكنك أيضاً بيع حساب فورت نايت الخاص بك على الموقع">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styleABC.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/store.js" async></script>
+  <script src="js/fun.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Almarai&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=saudi" />
+<link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=zahra-bold" />
+<link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=rawi" />
+<link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=mbc" />
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+<link rel="icon" href="imgs/logo.png">
+</head>
+
+<body>
+  <header>
+    <input type="checkbox" id="check" />
+    <label id="icon" for="check"> 
+      <!--  icon    -->
+      <div id="test" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+          <div class="bar3"></div>
+      </div>
+    </label>
+
+    <div class="menu-mobile">
+      <div class="nav-mobile">
+        <a href="#">
+          <div class="link" style="color: #F0C022;" id="homeM">الرئيسية</div>
+        </a>
+        <a href="#!" >
+          <div class="link" id="packsM">الحزم</div>
+        </a>
+        <a href="#!">
+          <div class="link" id="sPacksM">الباقات</div>
+        </a>
+        <a href="AccountsByCustomers/index.php">
+          <div class="link">شراء حساب</div>
+        </a>
+        <a href="Sell Account/index.html">
+          <div class="link">بيع حساب</div>
+        </a>
+        <a href="#">
+          <div class="link" id="sprtM">الدعم</div>
+        </a>
+      </div>
+    </div>
+
+    <section class="navigation" id="navbar" style="font-family: 'Almarai', sans-serif; font-size: 14px;">
+      <div class="nav-container">
+        <div class="brand">
+          <a href="#!" ><img src="imgs/theLogo.jpg" alt=""></a>
+        </div>
+        <nav>
+
+          <ul class="nav-list">
+            <li>
+              <a href="#!" class="support">الدعم</a>
+            </li>
+            <li>
+              <a href="#!">الحسابات</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="Sell Account/index.html" >بيع حساب</a>
+                </li>
+                <li>
+                  <a href="AccountsByCustomers/index.php">شراء حساب</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#!" class="isBoxPackss">الباقات</a>
+            </li>
+            <li>
+              <a href="#!" class="packss">الحزم</a>
+            </li>
+            <li>
+              <a href="#!"  class="home" style="color: #F0C022;">الرئيسية</a>
+            </li>
+            <li>
+              <a href="#!" id="cart" class="navbar-right" style="color: #F0C022;">
+                <span class="badge2" style="position: relative; left: 10px; z-index: 1; bottom: 6px;"></span>
+                <i class=""><img src="imgs/shoppingcartimg.png" style="position: relative; height: 40px; top: 10px;" ></i>
+              </a>
+
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+
+    <a href="#!" id="cartM" style="color: #F0C022;">
+      <span class="badge2" style="position: relative; left: 10px; z-index: 1; bottom: 6px;"></span>
+      <i class=""><img src="imgs/shoppingcartimg.png" style="position: relative; height: 40px; top: 10px;" ></i>
+    </a>
+        <div class="logoMobile">
+            <a href="#!"  ><img class="logoMobileimage" src="imgs/theLogoM.jpg" alt=""></a>
+        </div>
+    <div class="shopping-cart">
+      <div class="shopping-cart-header">
+        <i class="fa fa-shopping-cart cart-icon"></i><span class="badge2 "></span>
+        <div class="shopping-cart-total">
+          <span class="lighter-text">الإجمالي:</span>
+          <span class="main-color-text total-price">$0</span>
+        </div>
+      </div>
+      <ul class="shopping-cart-items"></ul>
+      <a href="checkout/index.html" class="CheckOutButton" style="font-weight: 900; font-family: 'mbc';font-size: 24px;">اِتمام الدّفع</a>
+    </div>
+  </header>
+
+
+  <div id="contain">
+
+   <div class="intro">
+      <div class="intro-texts">
+        <h1 class="introTitle superTexts" style="font-family: 'mbc';">!حسابات نادرة وأكثر</h1>
+
+        <h2 class="introSubTitle superTexts" style="font-family: 'Almarai', sans-serif; ">
+          فورت نايت بوكس هو أكبر, أسرع, وأأمن موقع لبيع حسابات فورت نايت في الشرق الأوسط 
+        </h2>
+        <button class="mobileIntroBtn"><a href="AccountsByCustomers/index.php"><span>!احصل على حساب</span></a></button>
+      </div>
+      <div class="intro-boxes">
+        <div class="intro-box intro-box1">
+          <img class="intro-box-img intro-box-img1" src="imgs/introbox1.png" alt="">
+          <div class="intro-box-txt intro-box-txt1">
+              <p class="intro-box-txt-title">الأمان</p>
+              <p class="intro-box-txt-subtitle">
+                الأمان؟ لا يهمك أبدا ! جميع المعلومات بين موقعنا والعميل سرية 100 ٪.
+                 أي حساب من الحسابات التي تشتريها من موقعنا مضمونة مئة بالمئة
+
+              </p>
+              <p class="intro-box-txt-link"></p>
+          </div>
+        </div>
+        <div class="intro-box intro-box2">
+          <div class="ribbon-wrapper">
+            <div class="ribbon" style="font-size: 16px; font-family: 'rawi'; letter-spacing:1px; line-height: 20px;">!جديد</div>
+          </div>
+          <img class="intro-box-img intro-box-img2" src="imgs/introbox2.png" alt="">
+          <div class="intro-box-txt intro-box-txt2">
+              <p class="intro-box-txt-title">بيع حسابك</p>
+              <p class="intro-box-txt-subtitle">
+                اذا كنت تفكر انك تبيع حسابك بس مانك ملاقي احد يشتريه.. اقرا اكثر عن كيف تنشر حسابك في موقعنا
+              </p>
+              <a href="" style="text-decoration: underline; ">..قراءة المزيد</a>
+          </div>
+        </div>
+        <div class="intro-box intro-box3">
+          <div class="ribbon-wrapper2">
+            <div class="ribbon2" style="letter-spacing:1px;font-family: 'rawi'; line-height: 10px;">..قريبا</div>
+          </div>
+          <img class="intro-box-img intro-box-img3" src="imgs/introbox3.png" alt="">
+          <div class="intro-box-txt intro-box-txt3">
+              <p class="intro-box-txt-title">تبديل الحسابات</p>
+              <p class="intro-box-txt-subtitle">اذا مو حابب انك تدفع ابدا وبنفس الوقت طفشت من حسابك. ميزة تبديل الحسابات قريبا في موقعنا<p class="intro-box-txt-link"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+      <div class="information">
+        <div class="info-boxes">
+          <div class="info1 infobox">
+                <p class="info1-title">الحزمات المباعة</p>
+                <p class="info1-sub-title counter" data-count="3167">3144</p>
+            </div>
+            <div class="info3 infobox">
+                <p class="info2-title">نملك اكثر من </p>
+                <p class="info2-sub-title counter" data-count="4511">4491</p>
+            </div>
+            <div class="info3 infobox">
+                <p class="info3-title">حسابات نادرة (جدا)</p>
+                <p class="info3-sub-title counter" data-count="500">471</p>
+            </div>
+          </div>
+      </div>
+      <div style="background-color: #212121; margin-top: -50px; padding-top: 40px; " class="newstaccs">
+      <div id="container">
+        <div class="accTXTSS">
+          <h1 class="superACC theH1">.أجدد الحسابات من قِبل العملاء</h1>
+          <h2 class="superACC theH2">هذه هي أجدد حسابات فورت نايت التي يتم نشرها من قِبل عملاءنا بعد أن تم التحقق منها عن طريق مسؤولين الموقع</h2>
+        </div>
+        <div class="container"></div>
+        
+        <a class="s" href="AccountsByCustomers/index.php">..عرض المزيد من الحسابات</a>
+        <div style="margin-bottom:100px;"></div>
+      </div>
+      </div>
+
+
+    <div class="Fortnite-Packs-Container">
+      <div class="Fortnite-Packs-Centering">
+        <!--<img class="lamaPacks" src="imgs/lamaPacks.png">-->
+        <div class="Fortnite-Packs-Container-texts">
+          <h1 class="Fortnite-Packs-Title fpText" style="font-family: 'mbc';font-size: 84px; margin-bottom: 40px; text-align: right; color: #5AB79E;">.الحِزم</h1>
+          <h2 class="Fortnite-Packs-Sub-Title fpText">حزم عشوائية, سكنات عشوائية. يمكن صار وقت انك تجرب حظك </h2>
+        </div>
+        <div class="packs"> <!--Start Fortnite pack-->
+
+          <a class="addToCartBtn"><div class="Fortnite-Packs packs-1">
+            <img src="imgs/1st-price.jpg" class="Fortnite-Packs-Img img-cart">
+            <span class="title" style="display: none">Beginner Pack</span>
+            <span class="price" style="display: none">$19.99</span>
+            <div class="Fortnite-Packs-texts">
+              <div class="Fortnite-Packs-leftside-information">
+                <p>1-14</p>
+                <p>عشوائي</p>
+                <p>عشوائي</p>
+                <p>عشوائي</p>
+                <p>أقل من 4س</p>
+              </div>
+              <div class="Fortnite-Packs-rightside-information">
+                <p>السكنات</p>
+                <p>البيكاكسات</p>
+                <p>لفل الحساب</p>
+                <p>الفي-بوكس</p>
+                <p>وقت التوصيل</p>
+              </div>
+            </div>
+            <hr class="hr1">
+            <button class="button button1 addToCartBtn">!طلب</button>
+        </div>
+      </a>
+
+          
+            <a class="addToCartBtn"><div class="Fortnite-Packs packs-2">
+            <img src="imgs/2nd-price.jpg" class="Fortnite-Packs-Img img-cart">
+            <span class="title" style="display: none">Sweaty Pack</span>
+            <span class="price" style="display: none">$116.99</span>
+            <div class="Fortnite-Packs-texts">
+              <div class="Fortnite-Packs-leftside-information">
+                <p>10-85</p>
+                <p>5-46</p>
+                <p>عشوائي</p>
+                <p>+100</p>
+                <p>من 1 الى 2 يوم</p>
+                <p>احتمال كبير</p>
+              </div>
+              <div class="Fortnite-Packs-rightside-information">
+                <p>السكنات</p>
+                <p>البيكاكسات</p>
+                <p>لفل الحساب</p>
+                <p>الفي-بوكس</p>
+                <p>وقت التوصيل</p>
+                <p>حزمة انفيديا</p>
+              </div>
+            </div>
+            <hr class="hr2">
+            <button class="button button2 addToCartBtn">!طلب</button>
+          </div> </a>
+
+          <a class=""><div class="Fortnite-Packs packs-3">
+            <div class="ribbon-wrapper3">
+              <div class="ribbon3">أفضل عرض </div>
+            </div>
+            <img src="imgs/3rd-price.jpg" class="Fortnite-Packs-Img img-cart">
+            <span class="title" style="display: none">Pro Pack</span>
+            <span class="price" style="display: none">$49.99</span>
+            <div class="Fortnite-Packs-texts">
+              <div class="Fortnite-Packs-leftside-information">
+                <p>10-52</p>
+                <p>5-31</p>
+                <p>عشوائي</p>
+                <p>+100</p>
+                <p>من 12س الى يوم</p>
+              </div>
+              <div class="Fortnite-Packs-rightside-information">
+                <p>السكنات</p>
+                <p>البيكاكسات</p>
+                <p>لفل الحساب</p>
+                <p>الفي-بوكس</p>
+                <p>وقت التوصيل</p>
+              </div>
+            </div>
+            <hr class="hr3">
+            <button class="button button3">غير متوفر</button>
+          </div> </a><!--END of  Fortnite pack-->
+        </div>
+      </div>
+    </div>
+    </div>
+
+   
+    <div class="aboveboxpacks">
+      <div id="boxPacks">
+      <div class="boxPacks-txts" >
+        <h1 class="boxPacksOff" style="color: rgb(255, 205, 67);">.باقات <span >بوكس</span> المحدودة</h1>
+        <h2 class="boxPacksOff" >هنا تجد الباقات التي توفرت لفترة محدودة في الايتم شوب</h2>
+      </div>
+      <div class="boxPacks-contain">
+
+        <div class="bg boxPacksOff">
+          <img class="showUpImg showUpImg1" src="imgs/packs/batmanpack.jpg" alt="">
+          <div class="overlay">
+            <div class="infoContainer">
+              <div class="priceOfbg">
+                <p>$29.<span style="font-size: 20px;">99</span></p>
+              </div>
+              <div class="infostats">
+                <h2>باقة باتمان</h2>
+                <h5 style="margin-right: 10px;">الحالة: <span style="color: rgb(173, 139, 24);">متوفر قريباً</span></h5>
+              </div>
+              <div class="whatInclude">
+                <button class="boxpacksBuyBtn1"><span>!شراء</span></button>
+              </div>
+   
+          </div>
+          </div>
+        </div>
+
+        <div class="bg boxPacksOff" style="top: -10px;">
+          <img class="showUpImg showUpImg2" src="imgs/packs/starterpack2.jpg" alt="">
+          <div class="overlay">
+            <div class="infoContainer">
+              <div class="priceOfbg">
+                <p>$9.<span style="font-size: 20px;">99</span></p>
+              </div>
+              <div class="infostats">
+                <h2>باقة لاقونا</h2>
+                <h5 st>الحالة: <span>نفذت الكمَية</span></h5>
+              </div>
+              <div class="whatInclude">
+                <button class="boxpacksBuyBtn2"><span>!شراء</span></button>
+              </div>
+   
+          </div>
+          </div>
+        </div>
+        
+        <div class="bg boxPacksOff">
+          <img class="showUpImg showUpImg3" src="imgs/packs/starterpack3.jpg" alt="">
+          <div class="overlay">
+            <div class="infoContainer">
+              <div class="priceOfbg">
+                <p>$59.<span style="font-size: 20px;">99</span></p>
+              </div>
+              <div class="infostats">
+                <h2>باقة انفيديا</h2>
+                <h5>الحالة: <span>غير متوفر</span></h5>
+              </div>
+              <div class="whatInclude">
+                <button class="boxpacksBuyBtn3"><span>!شراء</span></button>
+              </div>
+   
+          </div>
+          </div>
+        </div>
+
+
+      </div>
+      </div>
+    </div>
+    
+    <div class="thesprt">
+    <div id="theSupport">
+    <div class="form">
+      <h3 style="font-family: 'mbc'; text-align: right;">..تواصل معنا</h3>
+      <div class="form-group">
+        <input style="text-align: right;" type="text" class="form-control" value="" placeholder="الاسم" id="contact-name" />
+        <label class="input-field-icon icon-user" for="login-name"></label>
+      </div>
+
+      <div class="form-group">
+        <input style="text-align: right;" type="email" class="form-control" value="" placeholder="البريد الالكتروني" id="contact-email" />
+        <label class="input-field-icon icon-email" for="login-email"></label>
+      </div>
+      
+      <div class="form-group">
+        <textarea style="text-align: right;" class="form-control" value="" placeholder="الرسالة" id="contact-message" rows="1"></textarea>
+      </div>
+
+      <button id="contact-send" class="btn btn-primary btn-lg btn-block">Send</button>
+    </div>
+  </div>
+</div>
+
+<div style="height: 2px;"></div>
+<!-- FOOTER START -->
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h1>العلامة التجارية</h1>
+    <ul>
+      <li>عن فورت نايت بوكس</li>
+      <li>الخدمة</li>
+      <li>المؤسس</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>المنتجات</h1>
+    <ul>
+      <li>الحزم</li>
+      <li>الباقات</li>
+      <li>الحسابات</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>الإعلانات</h1>
+    <ul>
+      <li>عبر الايميل</li>
+      <li>أعلن في موقعنا</li>
+    </ul>
+  </div>
+  <div class="col">
+    <h1>الدعم</h1>
+    <ul>
+      <a href="https://tawk.to/chat/5c4a0e57ab5284048d0e7212/default"><li>الشات المباشر</li></a>
+      <li>تواصل معنا</li>
+    </ul>
+  </div>
+<div class="col social">
+    <h1>تابعنا على</h1>
+    <ul>
+      <a href="https://twitter.com/fortniteboxnet"><li><img src="imgs/twitterfooter.png" width="32" style="width: 32px;"></li></a>
+      <a href="https://www.instagram.com/fortniteboxdotnet/"><li><img src="imgs/instafooter.png" width="32" style="width: 32px;"></li></a>
+      <a href="https://discord.gg/N7zezFd"><li><img src="imgs/discordfooter.png" width="32" style="width: 32px;"></li></a>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+<!-- END OF FOOTER -->
+<div class="icon-bar">
+  <a href="https://discord.gg/N7zezFd" class="discord"><i class="fa"><img src="imgs/discordfooter.png" width="32" style="width: 32;"></i></a> 
+  <a href="https://www.instagram.com/fortniteboxdotnet/" class="instagram"><i class="fa"><img src="imgs/instafooter.png" width="32" style="width: 32px;"></i></a> 
+  <a href="https://twitter.com/fortniteboxnet" class="twitter"><i class="fa"><img src="imgs/twitterfooter.png" width="32" style="width: 32px;"></i></a> 
+</div>
+  <!--scripts-->
+
+  <script>
+    $("html, body").animate({ scrollTop: $('.intro').offset().top-290 }, 1000);
+    (function () {
+      $(".shopping-cart").hide();
+      $("#cart").on("click", function () {
+        $(".shopping-cart").fadeToggle("fast");
+
+      });
+      $("#cartM").on("click", function () {
+        $(".shopping-cart").fadeToggle("fast");
+
+      });
+      $('#contain').click(function () {
+        $('.shopping-cart').hide();
+          function myFunction(x) {
+    x.classList.toggle("change");
+}
+      });
+
+    })();
+
+    (function ($) { // Begin jQuery
+      $(function () { // DOM ready
+        // If a link has a dropdown, add sub menu toggle.
+        $('nav ul li a:not(:only-child)').click(function (e) {
+          $(this).siblings('.nav-dropdown').toggle();
+          // Close one dropdown when selecting another
+          $('.nav-dropdown').not($(this).siblings()).hide();
+          e.stopPropagation();
+        });
+        // Clicking away from dropdown will remove the dropdown class
+        $('html').click(function () {
+          $('.nav-dropdown').hide();
+        });
+        // Toggle open and close nav styles on click
+        $('#nav-toggle').click(function () {
+          $('nav ul').slideToggle();
+        });
+        // Hamburger to X toggle
+        $('#nav-toggle').on('click', function () {
+          this.classList.toggle('active');
+        });
+      }); // end DOM ready
+    })(jQuery); // end jQuery
+    </script>
+<script>
+  $('.intro-box').each(function(i){
+      setTimeout(() => {
+        $('.intro-box').eq(i).addClass('isShowingIntro');
+      }, 250 * (i+1));
+  });
+  $(".packss").click(function(){
+      $("html, body").animate({ scrollTop: $('.packs').offset().top-290 }, 1000);
+      
+  });
+  $(".home").click(function(){
+      $("html, body").animate({ scrollTop: $('.intro').offset().top-290 }, 1000);
+  });
+  setInterval(function(){
+    $('.superTexts').each(function(i){
+      setTimeout(() => {
+        $('.superTexts').eq(i).addClass('isShowingSuperTexts');
+      }, 150 * (i+1));   
+    });
+  },1200);
+  setInterval(function(){
+    document.getElementById("navbar").style.top = "0";
+  },1000);
+
+
+  $(".isBoxPackss").click(function(){
+      $("html, body").animate({ scrollTop: $('#boxPacks').offset().top-200 }, 1000);
+  });
+      $(".isBoxPackss").click(function(){
+      $("html, body").animate({ scrollTop: $('#boxPacks').offset().top-200 }, 1000);
+  });
+
+  $(".support").click(function(){
+      $("html, body").animate({ scrollTop: $('#theSupport').offset().top-200 }, 1000);
+  });
+    
+ $("#sprtM").click(function(){
+      $("html, body").animate({ scrollTop: $('#theSupport').offset().top-200 }, 1000);
+  });
+  $("#sPacksM").click(function(){
+      $("html, body").animate({ scrollTop: $('#boxPacks').offset().top-200 }, 1000);
+  }); 
+  $("#packsM").click(function(){
+      $("html, body").animate({ scrollTop: $('.packs').offset().top-290 }, 1000);
+      
+  }); 
+
+  function myFunction(x) {
+    x.classList.toggle("change");
+}
+</script>
+      <!--end of scripts-->
+
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5c4a0e57ab5284048d0e7212/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+
+    function myFunction(x) {
+    x.classList.toggle("change");
+    
+}
+
+
+    </script>
+    <!--End of Tawk.to Script-->
+
+  </body>
+</html>

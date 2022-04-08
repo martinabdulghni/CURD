@@ -1,0 +1,64 @@
+body {
+    font-family: 'mbc';
+}
+.checkoutContainer {
+    max-width: 1000px;
+    background-color: #000;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+    
+}
+table, td, th {  
+    border: 1px solid rgb(26, 26, 26);
+    font-size: 20px;
+    color: rgb(219, 219, 219);
+
+
+}
+table {
+    background-color: #000;
+    border-collapse: collapse;
+}
+th {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(29, 29, 29);
+    font-weight: 800;
+
+    
+}
+td {
+    font-weight: 100;
+}
+.lastTable th {
+    width: 500px;
+}
+
+.lastPayBtn {
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    width: 200px;
+    height: 40px;
+    border-radius: 7px;
+    border: 1px solid rgb(148, 148, 148);
+    
+}
+.lastPayBtn:hover {
+    background-color: #43A047;
+    transition: ease 0.3s;
+
+ 
+
+}
+.lastPayBtn span {
+    font-size: 30px;
+    font-family: 'mbc';
+    position: relative;
+    top: -7px;
+    color: #fff;
+}

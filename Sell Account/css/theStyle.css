@@ -1,0 +1,246 @@
+
+form {
+  font-family: 'cairo';
+}
+
+
+.infoBefore {
+    background-color: rgba(0, 0, 0, 0.568);
+    max-width: 950px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 7px;
+    padding-top: 30px;
+    margin-top: 120px;
+    -webkit-box-shadow: 0px 3px 19px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 19px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 19px -8px rgba(0,0,0,0.75);
+    font-family: 'cairo', sans-serif;
+
+}
+.intro-box-txt-title {
+  text-transform: uppercase;
+  color: #129489;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.platform-img {
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 0px;
+    right: 6px;
+    border-radius: 50px;
+}
+.intro-box-img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 40px;
+}
+
+.intro-box-txt-subtitle{
+    margin-bottom: 20px;
+    color: #b4b4b4;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 100;
+    line-height: 1.5;
+}
+
+.checkbox-layout {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 10px;
+    left: 10px;
+    margin: 10px;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .checkbox-layout input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(199, 199, 199);
+    border-radius: 2px;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .checkbox-layout:hover input ~ .checkmark {
+    background-color: rgb(150, 150, 150);
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-layout input:checked ~ .checkmark {
+    background-color: #E2CB72;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-layout input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-layout .checkmark:after {
+    left: 5px;
+    top: 1px;
+    width: 10px;
+    height: 15px;
+    border: solid #1c1c11;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+
+}
+
+  /*THE FORM*/
+  .sell-account {
+    max-width: 950px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 5px;
+    padding-bottom: 10px;
+  }
+
+  .allForm input {
+    margin: 0px;
+    border: none;
+    border-radius: 7px;
+    max-width: 220px;
+    height: 35px;
+    margin-top: 2px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    -webkit-box-shadow: 0px 3px 19px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 3px 19px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 3px 19px -8px rgba(0,0,0,0.75);
+    background-color: #323232;
+    color: #E2CB72;
+
+  }
+  .allForm p {
+    font-weight: 900;
+    margin: 0;
+    margin: 0px;
+    color: white;
+    font-size: 17px;
+    opacity: 0.7;
+    margin-left: 5px;
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 4px;
+  }
+  .colmon, .colmon-checkbox {
+    display: block;
+    width: 310px;
+    margin: 2px;
+    text-align: center;
+    height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+    padding-top: 10px;
+  }
+  .colmon p, .colmon-checkbox p {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .colmon-checkbox {
+    text-align: left;
+  }
+  .platform-checkbox {
+    margin-top: 8px;
+    text-align: center;
+  }
+  .thePlatforms {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 0px;
+    color: #e2e2e2;
+  }
+  .stylePF {
+    background-color: #eeeeee62;
+    max-width: 610px;
+    margin: 10px;
+    border-radius: 7px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkNames {
+    position: relative;
+    top: -3px;
+    left: -5px;
+  }
+
+  .submitBtn {
+    cursor: pointer;
+    width: 320px;
+    height: 60px;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: auto;
+    float: none;
+    background-color: #323232;
+    opacity: 0.8;
+    border: 0px;
+    border-radius: 7px;
+    columns: #E2CB72;
+}
+.submitBtn:hover {
+  background-color: #3f3f3f;
+  transition: 0.3s ease;
+
+}
+.pImgs {
+  padding: 3px;
+  text-align: center;
+}
+.note {
+
+}
+.colmon-checkbox input{
+  text-align: center;
+}
+.shopping-cart {
+  top: -0px;
+}
+

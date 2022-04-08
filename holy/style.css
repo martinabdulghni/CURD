@@ -1,0 +1,33 @@
+.note {
+	max-width: 250px;
+	max-height: 250px;
+}
+
+.divider {
+    margin-bottom: 8px;
+}
+
+.close i {
+	position: relative;
+	top:-10px;
+	right:-20px;
+	display: none;
+}
+
+.card:hover .card-content .card-title .close i {
+	display: inline;
+}
+
+.note .card-content p {
+	white-space: nowrap;
+	overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.flex-container {
+	margin: 0 auto;
+}
+
+#form-card {
+	display: block;
+}

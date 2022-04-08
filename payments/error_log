@@ -1,0 +1,32 @@
+[12-Feb-2020 17:33:56 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_UjdCAqQlZ13s1a) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 17:37:22 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_ghiJJ8JfbWm9ZV) Amount must convert to at least 300 öre. $0.16 converts to approximately 1.54 kr.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 17:38:04 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_8wzNDx8ypb6DlE) Amount must convert to at least 300 öre. $0.16 converts to approximately 1.54 kr.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 17:38:14 UTC] PHP Notice:  Undefined index: first_name in /home/wcnxxajr/public_html/payments/charge.php on line 10
+[12-Feb-2020 17:38:14 UTC] PHP Notice:  Undefined index: last_name in /home/wcnxxajr/public_html/payments/charge.php on line 11
+[12-Feb-2020 17:38:14 UTC] PHP Notice:  Undefined index: email in /home/wcnxxajr/public_html/payments/charge.php on line 12
+[12-Feb-2020 17:38:14 UTC] PHP Notice:  Undefined index: stripeToken in /home/wcnxxajr/public_html/payments/charge.php on line 13
+[12-Feb-2020 17:38:15 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_hzg8XrxxPNdMVX) Cannot charge a customer that has no active card
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 17:39:06 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_mfeLlFWC281gtr) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 17:41:48 UTC] PHP Fatal error:  Uncaught (Status 402) (Request req_ejAB9cy2GWTCon) Your card was declined. Your request was in test mode, but used a non test (live) card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 17:46:30 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_LaC6jU9iR5szhd) No such token: tok_1GBPI8DbvqXh96wShdlrh4ek; a similar object exists in test mode, but a live mode key was used to make this request.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 17:52:41 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_pJqSlkbWsGB5Y0) No such token: tok_1GBPO7DbvqXh96wS6ksAAw8j; a similar object exists in test mode, but a live mode key was used to make this request.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 18:03:28 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_qFI3peRUWDt0yK) No such token: tok_1GBPYZDbvqXh96wSpBGK40gA; a similar object exists in test mode, but a live mode key was used to make this request.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 18:06:53 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_almjK6nm403Zwa) No such token: tok_1GBPbrDbvqXh96wS6Y16aA2u; a similar object exists in test mode, but a live mode key was used to make this request.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 18:14:46 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_ErfqQeu5rnGetF) No such token: tok_1GBPjVDbvqXh96wS1Gsjeiap; a similar object exists in test mode, but a live mode key was used to make this request.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 18:15:02 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_ku00zzRWRtiSKp) No such token: tok_1GBPjkDbvqXh96wSj74d7ENE; a similar object exists in test mode, but a live mode key was used to make this request.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 18:18:52 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_gkigS9f6XfpWbF) Amount must convert to at least 300 öre. $0.16 converts to approximately 1.54 kr.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38
+[12-Feb-2020 18:21:46 UTC] PHP Fatal error:  Uncaught (Status 400) (Request req_e4pHHGDxcsu856) No such token: tok_1GBPqGDbvqXh96wShx84h1gB; a similar object exists in test mode, but a live mode key was used to make this request.
+  thrown in /home/wcnxxajr/public_html/payments/vendor/stripe/stripe-php/lib/Exception/ApiErrorException.php on line 38

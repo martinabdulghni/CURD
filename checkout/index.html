@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="utf-8">
+  <title>checkout</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="checkoutStyle.css">
+  <script src="../js/jquery-3.4.1.js"></script>
+  <script src="../js/store.js" async></script>
+  <script src="checkoutStore.js" async></script>
+  <link rel="stylesheet" type="text/css" href="https://www.fontstatic.com/f=mbc" />
+
+
+<link rel="icon" href="imgs/logo.png">
+</head>
+<body>
+    <header>
+            <section class="navigation" id="navbar" style="font-family: 'Almarai', sans-serif; font-size: 14px;">
+              <div class="nav-container">
+                <div class="brand">
+                  <a href="../" ><img src="../imgs/theLogo.png" alt=""></a>
+                </div>
+                <nav>
+                  <ul class="nav-list">
+                    <li>
+                      <a href="../" id="support">الدعم</a>
+                    </li>
+                    <li>
+                      <a href="#!">الحسابات</a>
+                      <ul class="nav-dropdown">
+                        <li>
+                          <a href="../Sell Account/index.html">بيع حساب</a>
+                        </li>
+                        <li>
+                          <a href="../AccountsByCustomers/index.php">شراء حساب</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a href="../" id="isBoxPackss">الباقات</a>
+                    </li>
+                    <li>
+                      <a href="../" id="packs">الحزم</a>
+                    </li>
+                    <li>
+                      <a href="../index.html" id="home">الرئيسية</a>
+                    </li>
+                    <li>
+                      <a href="#!" id="cart" class="navbar-right" style="color: #F0C022;display: none;">
+                        <span class="badge2" style="position: relative; left: 10px; z-index: 1; bottom: 6px;"></span>
+                        <i class=""><img src="../imgs/shoppingcartimg.png" style="position: relative; height: 40px; top: 10px;" ></i>
+                      </a>
+        
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </section>
+            <div class="shopping-cart" style="visibility: hidden;">
+              <div class="shopping-cart-header">
+                <i class="fa fa-shopping-cart cart-icon"></i><span class="badge2 "></span>
+                <div class="shopping-cart-total">
+                  <span class="lighter-text" >الإجمالي</span>
+                  <span class="main-color-text total-price">$0</span>
+                </div>
+              </div>
+              <ul class="shopping-cart-items"></ul>
+              <a href="checkout/index.html" class="CheckOutButton" style="font-weight: 900; font-family: 'mbc';font-size: 24px;">اِتمام الدّفع</a>
+            </div>
+    </header>
+    <style>
+        /* Center the loader */
+        #loader {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          z-index: 1;
+          width: 150px;
+          height: 150px;
+          margin: -75px 0 0 -75px;
+          border: 16px solid #f3f3f3;
+          border-radius: 50%;
+          border-top: 16px solid #F0C022;
+          width: 120px;
+          height: 120px;
+          -webkit-animation: spin 2s linear infinite;
+          animation: spin 2s linear infinite;
+        }
+        
+        @-webkit-keyframes spin {
+          0% { -webkit-transform: rotate(0deg); }
+          100% { -webkit-transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+        
+        /* Add animation to "page content" */
+        .animate-bottom {
+          position: relative;
+          -webkit-animation-name: animatebottom;
+          -webkit-animation-duration: 1s;
+          animation-name: animatebottom;
+          animation-duration: 1s
+        }
+        
+        @-webkit-keyframes animatebottom {
+          from { bottom:-100px; opacity:0 } 
+          to { bottom:0px; opacity:1 }
+        }
+        
+        @keyframes animatebottom { 
+          from{ bottom:-100px; opacity:0 } 
+          to{ bottom:0; opacity:1 }
+        }
+        
+        #myDiv {
+          display: none;
+          text-align: center;
+        }
+        </style>
+        </head>
+        <body onload="myFunction()" style="margin:0;">
+        
+        <div id="loader"></div>
+        
+        <div style="display:none;" id="myDiv" class="animate-bottom">
+          
+              <div class="checkoutContainer">
+
+                
+        <table class="headerTable">
+            <tr >
+                <th>صورة المنتج</th>
+                <th>الاسم</th>
+                <th>الكمية</th>
+                <th>السعر</th>
+                <th>حذف</th>
+            </tr>
+        </table>
+        <table class="checkoutTable"></table>
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+                <th></th>
+                <th>17.25%  ضريبة</th>
+                <th></th>
+            </tr>
+        </table>
+        <table class="lastTable">
+            <tr>
+                <th><a href="../payments/index.php"><button id="lastPayBttn" class="lastPayBtn"><span>اِتمام الدفع</span></button> </th></a>
+                <th style="color:rgb(190, 190, 190); font-weight: 600;">الإجمالي: <span id="isPrice" class="finalPrice" style="color:rgb(34, 240, 103); font-size: 20px; font-weight: 600;">$0.00</span></th>
+
+            </tr>
+        </table>
+
+    </div>
+        </div>
+        
+        <script>
+        var myVar;
+        
+        function myFunction() {
+          myVar = setTimeout(showPage, 3000);
+        }
+        
+        function showPage() {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("myDiv").style.display = "block";
+        }
+
+        var getPriceId = document.getElementById('isPrice').innerHTML
+        var checkPrice = getPriceId.replace('$','')
+        var letPrice = parseInt(checkPrice);
+        if(letPrice == 0 || letPrice == null) {
+           var theBtn = document.getElementById('lastPayBttn')
+           theBtn.setAttribute('style','display: none;')
+          }
+        if(letPrice != 0 || letPrice != null) {
+              theBtn.setAttribute('style','display: inline;')
+          }
+        </script>
+
+        
+        </body>
+
+
+
+
+<script>
+    (function () {
+      $(".shopping-cart").hide();
+      $("#cart").on("click", function () {
+        $(".shopping-cart").fadeToggle("fast");
+
+      });
+      $('#contain').click(function () {
+        $('.shopping-cart').hide();
+      });
+
+    })();
+
+    (function ($) { // Begin jQuery
+      $(function () { // DOM ready
+        // If a link has a dropdown, add sub menu toggle.
+        $('nav ul li a:not(:only-child)').click(function (e) {
+          $(this).siblings('.nav-dropdown').toggle();
+          // Close one dropdown when selecting another
+          $('.nav-dropdown').not($(this).siblings()).hide();
+          e.stopPropagation();
+        });
+        // Clicking away from dropdown will remove the dropdown class
+        $('html').click(function () {
+          $('.nav-dropdown').hide();
+        });
+        // Toggle open and close nav styles on click
+        $('#nav-toggle').click(function () {
+          $('nav ul').slideToggle();
+        });
+        // Hamburger to X toggle
+        $('#nav-toggle').on('click', function () {
+          this.classList.toggle('active');
+        });
+      }); // end DOM ready
+    })(jQuery); // end jQuery
+    </script>
+<script>
+  setInterval(function(){
+    document.getElementById("navbar").style.top = "0";
+  },1000);
+
+</script>
+  
+
